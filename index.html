@@ -224,14 +224,11 @@
   /* ── CHAPTERS ── */
   .chapters { background: var(--cream); padding: 100px 10vw; }
   .chapters-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-top: 56px; }
-  .chapter-card { background: var(--cream); padding: 40px 36px; transition: background 0.25s; text-decoration: none; display: block; color: inherit; }
-  .chapter-card:hover { background: #fff; }
-  .chapter-card:hover .chapter-arrow { transform: translateX(6px); }
+  .chapter-card { background: var(--cream); padding: 40px 36px; }
   .chapter-num { font-family: 'EB Garamond', serif; font-size: 46px; line-height: 1; color: rgba(140,21,21,0.12); margin-bottom: 16px; }
   .chapter-era { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--cardinal); font-weight: 500; margin-bottom: 10px; }
   .chapter-title { font-family: 'EB Garamond', serif; font-size: 22px; line-height: 1.3; font-weight: 500; color: var(--charcoal); margin-bottom: 10px; }
-  .chapter-desc { font-size: 13px; line-height: 1.7; color: var(--mid); margin-bottom: 22px; }
-  .chapter-arrow { display: inline-block; transition: transform 0.25s; color: var(--cardinal); font-size: 18px; }
+  .chapter-desc { font-size: 13px; line-height: 1.7; color: var(--mid); }
 
   /* ── PILLARS ── */
   .pillars-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px 80px; margin-top: 60px; }
@@ -638,41 +635,36 @@
   <div class="section-eyebrow reveal">Five Eras</div>
   <h2 class="section-title reveal">The story,<br><em>chapter by chapter.</em></h2>
   <div class="chapters-grid">
-    <a class="chapter-card reveal" href="#program">
+    <div class="chapter-card reveal">
       <div class="chapter-num">I</div>
       <div class="chapter-era">1908 – 1940s</div>
       <div class="chapter-title">The San Francisco Period</div>
       <div class="chapter-desc">Cooper Medical College, the birth of Stanford Surgery in 1914, and Emile Holman's foundational academic vision.</div>
-      <span class="chapter-arrow">→</span>
-    </a>
-    <a class="chapter-card reveal" href="#program">
+    </div>
+    <div class="chapter-card reveal">
       <div class="chapter-num">II</div>
       <div class="chapter-era">1950s – 1970s</div>
       <div class="chapter-title">The Move to Palo Alto</div>
       <div class="chapter-desc">Bob Chase's leadership, Norman Shumway's cardiac revolution, and the founding of pediatric surgery on the new campus.</div>
-      <span class="chapter-arrow">→</span>
-    </a>
-    <a class="chapter-card reveal" href="#program">
+    </div>
+    <div class="chapter-card reveal">
       <div class="chapter-num">III</div>
       <div class="chapter-era">1990s</div>
       <div class="chapter-title">The UCSF / Stanford Merger</div>
       <div class="chapter-desc">A bold and short-lived experiment — the stories, the financial pressures, and the recommitment to building world-class hospitals.</div>
-      <span class="chapter-arrow">→</span>
-    </a>
-    <a class="chapter-card reveal" href="#program">
+    </div>
+    <div class="chapter-card reveal">
       <div class="chapter-num">IV</div>
       <div class="chapter-era">2000s – 2020s</div>
       <div class="chapter-title">The Phoenix Rising</div>
       <div class="chapter-desc">Biodesign, subspecialization, faculty growth, regional expansion, and navigating a global pandemic — Stanford Surgery rebuilt stronger.</div>
-      <span class="chapter-arrow">→</span>
-    </a>
-    <a class="chapter-card reveal" href="#program">
+    </div>
+    <div class="chapter-card reveal">
       <div class="chapter-num">V</div>
       <div class="chapter-era">2026 and Beyond</div>
       <div class="chapter-title">Advancing Surgical Science</div>
       <div class="chapter-desc">AI-guided surgery, intestinal regeneration, surgical simulation, global health equity, and the Holman 1-10-100 Pledge for the next century.</div>
-      <span class="chapter-arrow">→</span>
-    </a>
+    </div>
   </div>
 </div>
 
@@ -718,7 +710,7 @@
   <div class="footer-top">
     <div class="footer-brand">
       Holman 100 — Stanford Department of Surgery
-      <span>Stanford University School of Medicine · 1914–2026</span>
+      <span>Stanford University School of Medicine · 1926–2026</span>
     </div>
     <ul class="footer-links">
       <li><a href="#program">Program</a></li>
